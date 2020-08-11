@@ -1,0 +1,53 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gender: MyString
+  race: MyString
+  class: MyString
+  level: 1
+  base_stats: MyText
+  saving_throws: MyText
+  hp: 1
+  movement: 1
+  armor_class: 1
+  initiative: 1
+  conditions: MyText
+  defenses: MyText
+  languages: MyText
+  actions: MyText
+  spells: MyText
+  equipment: MyText
+  features_traits: MyText
+  prof_bonus: 1
+  save_prof: MyText
+  armor_prof: MyText
+  weapon_prof: MyText
+  tool_prof: MyText
+  skill_prof: MyText
+
+two:
+  name: MyString
+  gender: MyString
+  race: MyString
+  class: MyString
+  level: 1
+  base_stats: MyText
+  saving_throws: MyText
+  hp: 1
+  movement: 1
+  armor_class: 1
+  initiative: 1
+  conditions: MyText
+  defenses: MyText
+  languages: MyText
+  actions: MyText
+  spells: MyText
+  equipment: MyText
+  features_traits: MyText
+  prof_bonus: 1
+  save_prof: MyText
+  armor_prof: MyText
+  weapon_prof: MyText
+  tool_prof: MyText
+  skill_prof: MyText
