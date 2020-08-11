@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_11_125807) do
+ActiveRecord::Schema.define(version: 2020_08_11_150948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,10 +23,8 @@ ActiveRecord::Schema.define(version: 2020_08_11_125807) do
     t.integer "level"
     t.text "base_stats", default: [], array: true
     t.text "saving_throws", default: [], array: true
-    t.integer "hp"
     t.integer "movement"
     t.integer "armor_class"
-    t.integer "initiative"
     t.text "conditions", default: [], array: true
     t.text "defenses", default: [], array: true
     t.text "languages", default: [], array: true
@@ -43,6 +41,8 @@ ActiveRecord::Schema.define(version: 2020_08_11_125807) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
+    t.text "hp", default: [], array: true
+    t.text "description", default: [], array: true
   end
 
   create_table "users", force: :cascade do |t|
