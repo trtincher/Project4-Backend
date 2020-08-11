@@ -41,7 +41,7 @@ const main = async () => {
 				temp: 0
 			},
 			movement: 30,
-			armor_class: 11,
+			armorClass: 11,
 			conditions: {
 				blinded: false,
 				charmed: false,
@@ -77,7 +77,7 @@ const main = async () => {
 			],
 			spells: [ { spell_name: 'Spell', spell_discription: 'description here', prepared: true } ],
 			equipment: [ { item_name: 'item', discription: 'item_description', equiped: true } ],
-			features_traits: {
+			featuresTraits: {
 				wizard_features: { catigory: 'discriptions' },
 				racialTraits: { catigory: 'discriptions' },
 				feats: { catigory: 'discriptions' }
