@@ -9,9 +9,17 @@
 		"dev": "nodemon server.js",
 		"db:seed": "node db/seed.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/trtincher/Project4-Backend.git"
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/trtincher/Project4-Backend/issues"
+	},
+	"homepage": "https://github.com/trtincher/Project4-Backend#readme",
 	"dependencies": {
 		"axios": "^0.19.2",
 		"cors": "^2.8.5",
