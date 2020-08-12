@@ -13,7 +13,7 @@ const characterSchema = new mongoose.Schema({
 	armorClass: { type: Number, required: true },
 	conditions: { type: Object, required: true },
 	defenses: { type: Array, required: true },
-	languages: { type: Object, required: true },
+	languages: { type: Array, required: true },
 	actions: { type: Array, required: true },
 	spells: { type: Array, required: true },
 	equipment: { type: Array, required: true },
