@@ -22,7 +22,7 @@ const main = async () => {
 	await Character.insertMany([
 		{
 			name: 'Thomas the Wise',
-			avatar: 'https://i.imgur.com/Lb31Ln9.png',
+			avatar: 'https://i.imgur.com/p7WqoA8.png',
 			gender: 'Male',
 			race: 'Half-Elf',
 			class: 'Wizard',
@@ -34,6 +34,9 @@ const main = async () => {
 				intelligence: 16,
 				wisdom: 10,
 				charisma: 14
+			},
+			spellSlots: {
+				1: 2
 			},
 			saving_throws: [ 'str', 'dex', 'con', 'int', 'wis', 'cha' ],
 			hp: {
