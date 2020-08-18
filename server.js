@@ -6,7 +6,7 @@ const logger = require('morgan');
 app.use(cors());
 
 var corsOptions = {
-	origin: 'http://localhost:3000',
+	origin: [ 'http://localhost:3000', 'http://familiar-react-app.surge.sh/' ],
 	credentials: true,
 	methods: [ 'GET', 'POST', 'OPTIONS', 'PUT', 'DELETE' ]
 };
