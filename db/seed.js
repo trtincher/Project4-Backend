@@ -16,6 +16,13 @@ const main = async () => {
 			email: 'trtincher12@gmail.com',
 			password: 'D&Discool100!',
 			characters: []
+		},
+
+		{
+			name: 'bob',
+			email: 'bob@gmail.com',
+			password: 'D&Discool100!',
+			characters: []
 		}
 	]);
 
@@ -1091,6 +1098,52 @@ const main = async () => {
 			// let characterId = character._id;
 			User.findOneAndUpdate(
 				{ name: 'trtincher' },
+				{
+					$push: {
+						characters: character
+					}
+				},
+				{ new: true },
+				(err, user) => {
+					if (err) console.log(err);
+					else {
+						console.log(`Added ${character.name} to ${user.name}'s characters array.`);
+					}
+				}
+			);
+		}
+	});
+
+	// Add Thomas the Wise to Bobs characters
+	await Character.findOne({ name: 'Thomas the Wise' }, (err, character) => {
+		if (err) console.log(err);
+		else {
+			// let characterId = character._id;
+			User.findOneAndUpdate(
+				{ name: 'bob' },
+				{
+					$push: {
+						characters: character
+					}
+				},
+				{ new: true },
+				(err, user) => {
+					if (err) console.log(err);
+					else {
+						console.log(`Added ${character.name} to ${user.name}'s characters array.`);
+					}
+				}
+			);
+		}
+	});
+
+	// Add Jeff the Intellegent to Bobs characters
+	await Character.findOne({ name: 'Jeff the Intellegent' }, (err, character) => {
+		if (err) console.log(err);
+		else {
+			// let characterId = character._id;
+			User.findOneAndUpdate(
+				{ name: 'bob' },
 				{
 					$push: {
 						characters: character
