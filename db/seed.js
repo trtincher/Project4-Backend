@@ -1456,30 +1456,7 @@ const main = async () => {
 	});
 
 	// Add Thomas the Wise to Bobs characters
-	await Character.findOne({ name: 'Thomas the Wise' }, (err, character) => {
-		if (err) console.log(err);
-		else {
-			// let characterId = character._id;
-			User.findOneAndUpdate(
-				{ name: 'bob' },
-				{
-					$push: {
-						characters: character
-					}
-				},
-				{ new: true },
-				(err, user) => {
-					if (err) console.log(err);
-					else {
-						console.log(`Added ${character.name} to ${user.name}'s characters array.`);
-					}
-				}
-			);
-		}
-	});
-
-	// Add Jeff the Intellegent to Bobs characters
-	await Character.findOne({ name: 'Jeff the Intellegent' }, (err, character) => {
+	await Character.findOne({ name: 'Thomas the Wise2' }, (err, character) => {
 		if (err) console.log(err);
 		else {
 			// let characterId = character._id;
